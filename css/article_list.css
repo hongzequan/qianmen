@@ -1,0 +1,24 @@
+﻿/* Write your styles */
+html, body, .page {height: 100%;}
+#wrapper{position: absolute; top: 0; bottom: 0; overflow: hidden; margin: 0; width: 100%; background-color: #f8f8f8;}
+.am-list {margin: 0;}
+.am-list>li {background: none; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);}
+.pull-action {text-align: center; height: 45px;	line-height: 45px; color: #999;}
+.pull-action .am-icon-spin {display: none;}
+.pull-action.loading .am-icon-spin {display: block;}
+.pull-action.loading .pull-label {display: none;}
+
+#html_content .news{border-bottom: 1px solid #ddd; padding: 10px; background-color: #fff;}
+#html_content .news.NB{border-bottom-width: 0;}
+#html_content .news .news_left{width: 100px; height: 100px; float: left;}
+#html_content .news .news_left img{width: 100%; height: 100%;}
+#html_content .news .news_right{margin-left: 100px; height: 100px; padding-left: 10px; overflow: hidden; position: relative;}
+#html_content .news .news_right .news_title{display: block; line-height: 25px; font-size: 14px;}
+#html_content .news .news_right .news_user{margin: 5px 0;}
+#html_content .news .news_right .news_user .user_head_portrait{width: 35px; height: 35px; line-height: 35px; float: left;}
+#html_content .news .news_right .news_user .user_head_portrait img{width: 100%; height: 100%;}
+#html_content .news .news_right .news_user .user_name,
+#html_content .news .news_right .news_user .uploading_time{height: 25px; line-height: 25px; padding-left: 10px; font-size: 12px; color: #7f7e7e; position: absolute; bottom: 0; left: 0;}
+#html_content .news .news_right .news_user .user_comment,
+#html_content .news .news_right .news_user .user_collect{width: auto; height: 35px; line-height: 35px; font-size: 13px; color: #7f7e7e; padding-left: 35px; padding-right: 20px; color: #999999; float: left; position: relative;}
+#html_content .news .news_right .news_content{font-size: 12px; color: #626262;}

@@ -1,0 +1,54 @@
+﻿/* Write your styles */
+#wrapper{width: 100%; padding-top: 40px; padding-bottom: 50px;}
+.am-list {margin: 0;}
+.am-list>li {background: none; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);}
+.pull-action {text-align: center; height: 45px;	line-height: 45px; color: #999;}
+
+.page .street-icon{display: block; width: 25px; height: 25px; margin: 7.5px; background-image: url("../images/street_centre-icon.png"); background-size: 100px 250px; background-position-x: -50px;}
+.page .one .street-icon,
+.page .two .street-icon,
+.page .three .street-icon{
+	transform:rotate(-35deg);
+	-ms-transform:rotate(-35deg); 	/* IE 9 */
+	-moz-transform:rotate(-35deg); 	/* Firefox */
+	-webkit-transform:rotate(-35deg); /* Safari �� Chrome */
+	-o-transform:rotate(-35deg); 	/* Opera */
+	position: absolute; top: -20px; left: -13px;
+	background-position-x: -75px;
+}
+.page .two .street-icon{background-position-y: -25px;}
+.page .three .street-icon{background-position-y: -50px;}
+
+.page .screen{background-color: #0099ff; width: 100%; position: fixed; top: 0; left: 0; z-index: 998;}
+.page .screen:after{content:'';display:block;clear:both;height:0px;}
+.page .screen .screen_tab{width: 50%; height: 40px; line-height: 40px; font-size: 14px; text-align: center; float: left; color: #fff !important;}
+.page .screen .screen_tab.active span{border-bottom: 1px solid #fff; padding: 0 5px;}
+
+#html_content .line{padding: 5px; border-top: 1px solid #e4e4e4; background-color: #fff;}
+#html_content .line:first-child{border-top-width: 0;}
+#html_content .line .index{width: 30px; height: 60px; line-height: 60px; text-align: center; float: left;}
+#html_content .line .merchant_img{width: 50px; height: 50px; margin: 5px; position: relative;}
+#html_content .line .merchant_img .circle_img{width: 100%; height: 100%; border-radius: 50%; overflow: hidden; position: absolute; top: 0; left: 0;}
+#html_content .line .merchant_img.one .circle_img{border: 4px solid #fedc3d;}
+#html_content .line .merchant_img.two .circle_img{border: 4px solid #e5e5e5;}
+#html_content .line .merchant_img.three .circle_img{border: 4px solid #d3a470;}
+#html_content .line .merchant_message .star_list{display: block; height: 20px; padding: 2.5px 0;}
+#html_content .line .merchant_message .star_list .star-icon{background-position-y: -50px; margin: -5px; float: left;}
+#html_content .line .merchant_message .star_list .star-icon-on{background-position-y: -75px; margin: -5px; float: left;}
+#html_content .line .merchant_message{height: 60px; line-height: 20px; margin-left: 100px;}
+
+#html_content .not_available{width: 100%; text-align: center; padding: 70px 0; background: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
