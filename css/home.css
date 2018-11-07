@@ -317,6 +317,22 @@
 .shopCenter .head .shop_message .semi-lattice_border{border-right: 1px solid #FFFFFF;}
 .shopCenter .module {margin: 10px 0;}
 
+/* 商户中心－基本信息*/
+.main_base .ax_default{text-align: inherit}
+.main_base .base_content{background-color: #FFFFFF;margin-top: 12px;}
+.main_base .base_content>div{display: flex;min-height: 48px;align-items: center;border-top: 1px solid #E9E9E9}
+.main_base .base_content>div .base_left{flex: 1;margin-right: 8px;text-align: right;}
+.main_base .base_content>div .base_right{flex: 4;}
+.main_base .base_content>div .base_right .star-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/await-icon.png");background-size: 216px 32px;background-position-x: -80px;}
+.main_base .base_content>div .base_right .star-gray-icon{display: inline-block; width: 30px; height: 30px; background-image: url("../images/await-icon.png"); background-size: 216px 32px;background-position-x: -104px;}
+.main_base .base_content>div .base_password{display: flex}
+.main_base .base_content>div .base_password .base_password_left{flex: 3}
+.main_base .base_content>div .base_password .base_password_right{flex: 1;text-decoration: underline;color: #22AC37;cursor: pointer;font-size: 14px;}
+.main_base .base-footer{display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
+.main_base .base-footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 48px;}
+.main_base .base-footer .footer_save{flex: 2;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
+
+
 
 
 
