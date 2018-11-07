@@ -296,6 +296,18 @@
 #my_tab1 img{width: 100%;}
 
 
+/* 登录页 */
+.ax_default{font-family:'Arial Normal', 'Arial';font-weight:400;font-style:normal;font-size:13px;color:#333333;text-align:center;line-height:normal;}
+.loginMain .login_content{margin-top: 24px;}
+.login_content .login_content_li{display: flex;align-items: center;height: 40px;background-color: #FFFFFF;}
+.login_content .li_bottom{border-bottom: 1px solid #999999}
+.login_content_li .content_label{flex: 1;text-align: right;padding: 0 8px}
+.login_content_li div{flex: 3;padding: 0 8px;}
+.login_content_li div input{border: none !important;width: 100%;margin: 0 !important;}
+.loginMain .login_button{display: flex;align-items: center;width: 80%;height: 40px;margin: 24px auto;background-color: rgba(34, 172, 55, 1);border: none;border-radius: 5px;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;}
+.loginMain .login_button button{width: 100%;color: #FFFFFF}
+
+
 
 
 
