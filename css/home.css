@@ -307,6 +307,16 @@
 .loginMain .login_button{display: flex;align-items: center;width: 80%;height: 40px;margin: 24px auto;background-color: rgba(34, 172, 55, 1);border: none;border-radius: 5px;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;}
 .loginMain .login_button button{width: 100%;color: #FFFFFF}
 
+/* 商户中心 */
+.shopCenter .head{min-height: 184px;position: relative}
+.shopCenter .head .shop{padding: 24px 48px}
+.shopCenter .head .shop .shop_name{margin-left: 80px}
+.shopCenter .head .shop_message_mask{position: absolute;bottom: 0;width: 100%;height: 40px;background-color: #000000;opacity: 0.1}
+.shopCenter .head .shop_message{position: absolute;bottom: 0;width: 100%;height: 40px;display: flex;align-items: center;text-align: center;}
+.shopCenter .head .shop_message .semi-lattice{flex: 1;}
+.shopCenter .head .shop_message .semi-lattice_border{border-right: 1px solid #FFFFFF;}
+.shopCenter .module {margin: 10px 0;}
+
 
 
 
