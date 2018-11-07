@@ -332,7 +332,12 @@
 .main_base .base-footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 48px;}
 .main_base .base-footer .footer_save{flex: 2;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
 
-
+/* 商户中心－修改密码 */
+.main_update_password .login_content{margin-top: 12px;}
+.main_update_password .login_content .login_content_li{margin-top: 12px;}
+.main_update_password .update_password_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
+.main_update_password .update_password_footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 48px;}
+.main_update_password .update_password_footer .footer_save{flex: 2;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
 
 
 
