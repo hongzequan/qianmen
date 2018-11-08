@@ -358,4 +358,13 @@
 .main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_detail{display: flex;line-height: 48px;}
 .main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_detail > div{flex: 1;}
 
+/* 群众端－门前三包宣传－详情 */
+.main_conduct_detail .conduct_detail_content{padding: 12px 8px;line-height: 32px;background-color: #FFFFFF}
+.main_conduct_detail .conduct_detail_content .conduct_detail_content_title{font-size: 16px;font-weight: 400;}
+.main_conduct_detail .conduct_detail_content .conduct_detail_content_info{display: flex;}
+.main_conduct_detail .conduct_detail_content .conduct_detail_content_info .conduct_detail_content_info_author{flex: 1;}
+.main_conduct_detail .conduct_detail_content .conduct_detail_content_info .conduct_detail_content_info_date{flex: 4;}
+.main_conduct_detail .conduct_detail_content .conduct_detail_content_text{border: 1px solid #E9E9E9;}
+
+
 
