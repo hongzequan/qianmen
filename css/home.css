@@ -297,7 +297,7 @@
 
 
 /* 登录页 */
-.ax_default{font-family:'Arial Normal', 'Arial';font-weight:400;font-style:normal;font-size:13px;color:#333333;text-align:center;line-height:normal;}
+.ax_default{font-family:'Arial Normal', 'Arial';font-weight:400;font-style:normal;font-size:13px;color:#333333;line-height:normal;}
 .loginMain .login_content{margin-top: 24px;}
 .login_content .login_content_li{display: flex;align-items: center;height: 40px;background-color: #FFFFFF;}
 .login_content .li_bottom{border-bottom: 1px solid #999999}
@@ -348,5 +348,14 @@
 .main_check_store .check_store_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
 .main_check_store .check_store_footer .footer_back{flex: 1;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
 
+/* 群众端－门前三包宣传 */
+.main_conduct .conduct_content{background-color: #FFFFFF;margin-top: 12px;}
+.main_conduct .conduct_content .conduct_list{display: flex;height: 96px;padding: 0 8px;border-bottom: 1px solid #E9E9E9;}
+.main_conduct .conduct_content .conduct_list .conduct_list_left{width: 85px;}
+.main_conduct .conduct_content .conduct_list .conduct_list_left img{margin-top: 12px;}
+.main_conduct .conduct_content .conduct_list .conduct_list_right{width: calc(100% - 85px);display: flex;flex-direction: column;}
+.main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_title{line-height: 48px;font-size: 16px;}
+.main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_detail{display: flex;line-height: 48px;}
+.main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_detail > div{flex: 1;}
 
 
