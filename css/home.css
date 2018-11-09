@@ -295,6 +295,12 @@
 #html_content .not_available{width: 100%; text-align: center; padding: 70px 0; background: #fff;}
 #my_tab1 img{width: 100%;}
 
+/* 颜色 */
+.color-red{color: #FF0000;}
+.color-black{color: #000000;}
+.color-999{color: #999999;}
+.color-green{color: #17B298;}
+.color-yellow{color: #F8B82C;}
 
 /* 登录页 */
 .ax_default{font-family:'Arial Normal', 'Arial';font-weight:400;font-style:normal;font-size:13px;color:#333333;line-height:normal;}
@@ -347,6 +353,10 @@
 .main_check_store .check_store_content .check_store_list>a{background-color: #FFFFFF;margin-top: 12px;padding-left: 8px;display: block;}
 .main_check_store .check_store_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
 .main_check_store .check_store_footer .footer_back{flex: 1;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
+
+.main_check_store .record .am-tabs .check_store_search{margin: 0 !important;}
+.main_check_store .record .am-tabs .am-nav-tabs{position: fixed;bottom: 0;width: 100%;z-index: 999;}
+.main_check_store .record .am-tabs .am-nav-tabs a{height: auto;line-height: 0;padding: 0 1em 1em 1em;}
 
 /* 群众端－门前三包宣传 */
 .main_conduct .conduct_content{background-color: #FFFFFF;margin-top: 12px;}
