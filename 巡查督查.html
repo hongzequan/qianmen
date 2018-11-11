@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="format-detection" content="telephone=no" />
-    <title>修改密码</title>
+    <title>巡查督查</title>
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="icon" type="image/png" href="http://xmch.mq3b.com/i/favicon.png?v=1">
@@ -37,7 +37,10 @@
     <script>
         layer.open({
             content: '暂无权限',
-            time: 2 //2秒后自动关闭
+            time: 2, //2秒后自动关闭
+            end: function () {//弹出层销毁时的回调函数
+                history.go(-1);//返回上一级页面
+            }
         });
     </script>
 </body>

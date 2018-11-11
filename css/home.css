@@ -311,6 +311,7 @@
 .font_20{font-size: 20px;}
 .bg_color_green{background-color: #17B298;}
 .bg_color_red{background-color: #FF0000;}
+.bg_color_yellow{background-color: #F8B82C;}
 .text_left{text-align: left;}
 .text_center{text-align: center;}
 .text_right{text-align: right;}
@@ -343,7 +344,9 @@
 .main_base .base_content{background-color: #FFFFFF;margin-top: 12px;}
 .main_base .base_content>div{display: flex;min-height: 48px;align-items: center;border-top: 1px solid #E9E9E9}
 .main_base .base_content>div .base_left{flex: 1;margin-right: 8px;text-align: right;}
-.main_base .base_content>div .base_right{flex: 4;}
+.main_base .base_content>div .base_right{flex: 3;margin-right: 8px;}
+.main_base .base_content>div .base_right .base_image{position: absolute;top: auto;}
+.main_base .base_content>div .base_right span{margin-left: 24px;}
 .main_base .base_content>div .base_right .star-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/await-icon.png");background-size: 216px 32px;background-position-x: -80px;}
 .main_base .base_content>div .base_right .star-gray-icon{display: inline-block; width: 30px; height: 30px; background-image: url("../images/await-icon.png"); background-size: 216px 32px;background-position-x: -104px;}
 .main_base .base_content>div .base_password{display: flex}
@@ -405,9 +408,9 @@
 /* 图片上传 */
 .report_upload{background-color: #FFFFFF;}
 .report_upload .report_upload_image{display: flex;flex-direction: row;margin: 8px;padding: 8px 0;}
-.report_upload .report_upload_image div{width: 54px;height: 54px;border: 1px solid #B0B0B0;margin-right: 8px;}
+.report_upload .report_upload_image div,label{width: 54px;height: 54px;border: 1px solid #B0B0B0;margin-right: 8px;}
 .report_upload .report_upload_image div .img_update{width: 100%;height: 100%}
-.report_upload .report_upload_image div .img_flag{margin: 14px;}
+.report_upload .report_upload_image label .img_flag{margin: 14px;}
 .report_upload .report_upload_message{font-size: 12px;color: #666666;padding: 8px;}
 
 /* 获取定位*/
@@ -433,6 +436,8 @@
 .main_report .main_report_content .report_content_detail .report_tab a.tab_active{flex: 1;margin: 0 8px;border: 1px solid #22AC37;text-align: center;}
 .main_report .main_report_content .report_content_detail .people_content .people_panel.tab_active{display: flex;}
 .main_report .main_report_content .report_content_detail .people_content .people_panel{display: none}
+.main_report .main_report_content .report_content_detail .people_content .people_panel textarea:focus{outline: none;}
+.main_report .main_report_content .report_content_detail .people_content{margin: 0 8px;}
 .fileinput-button {position: relative;display: inline-block;overflow: hidden;}
 .fileinput-button input{position: absolute;left: 0px;top: 0px;opacity: 0;-ms-filter: 'alpha(opacity=0)';}
 
@@ -570,8 +575,8 @@
 .detail_footer>.button_left{
 	display: flex;
 	flex: 1;
-	background-color: #F8B82C;
 	flex-direction: column;
+	background-color: rgba(204, 204, 204, 1);
 }
 .detail_footer>.button_left>.button_img{
 	display: flex;
@@ -609,14 +614,17 @@
 	min-height: 45px;
 
 }
-.detail_content>.content_right>.detail_card>.base_content>.content_appr{
+.content_appr{
 	display: flex;
 	flex: 3;
 	border: 0;
 	min-height: 45px;
+	justify-content: center;
 }
-.detail_content>.content_right>.detail_card>.base_content>.content_appr>.appr-laugh-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/laugh-icon.png");}
-.detail_content>.content_right>.detail_card>.base_content>.content_appr>.appr-cry-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/cry-icon.png");}
+.content_appr>.appr-laugh-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/laugh-icon.png");}
+.content_appr>.appr-cry-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/cry-icon.png");}
+.layer_appr .layer_appr_text textarea{width: 100%;height: 54px;}
+.layer_appr .layer_appr_text textarea:focus{outline: none;}
 .detail_content>.content_right>.detail_card>.base_content>.content_top{
 	display: flex;
 	flex: 1;
@@ -629,6 +637,7 @@
 	flex: 1;
 	border: 0;
 	min-height: 0;
+	margin: 0 8px;
 
 }
 .detail_content>.content_right>.detail_card>.base_content>.content_bottom{
@@ -650,6 +659,10 @@
 }
 .detail_content>.content_right>.detail_card>div:first-child{
 	color:white;
+}
+.detail_content>.content_right>.detail_card .base_content{
+	margin-bottom: 12px;
+	line-height: 22px;
 }
 
 

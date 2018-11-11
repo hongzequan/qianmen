@@ -50,8 +50,75 @@ $(".main_report_footer .footer_save").on('click',function(){
     layer.open({
         type: 0,
         content: "举报成功！<br/>您已行使了门前三包监督权力",
-    })
+        success: function () {//弹出层打开时的回调函数
+
+        },
+        end: function () {//弹出层销毁时的回调函数
+            history.go(-1);
+        }
+    });
 });
+
+$("#false_report").on('click',function(){
+    layer.open({
+        title: "群众虚假举报？",
+        content: '确定虚假举报后，巡查员将对该问题进行核实，若问题真实有效则扣双倍分数！',
+        btn: ['确定','取消'],
+        yes: function (index) {
+            console.log('点击确定时的回调函数');
+            layer.close(index);
+        },
+        no: function (index) {
+            console.log('点击取消时的回调函数');
+            layer.close(index);
+        }
+    });
+});
+
+$("#handle").on('click',function(){
+    layer.open({
+        title: "确定自行处理？",
+        content: '确定自行处理后，巡查员将对该问题进行复查，若问题仍旧存在则扣双倍分数！',
+        btn: ['确定','取消'],
+        yes: function (index) {
+            console.log('点击确定时的回调函数');
+            layer.close(index);
+        },
+        no: function (index) {
+            console.log('点击取消时的回调函数');
+            layer.close(index);
+        }
+    });
+});
+
+$("#evaluate").on('click',function(){
+    layer.open({
+        content:
+        '<div class="layer_appr">' +
+            '<div class="content_appr">' +
+                '<span class="appr-laugh-icon"></span>' +
+                '<span class="appr-laugh-icon"></span>' +
+                '<span class="appr-laugh-icon"></span>' +
+                '<span class="appr-laugh-icon"></span>' +
+                '<span class="appr-cry-icon"></span>' +
+            '</div>' +
+            '<div class="layer_appr_text">' +
+                '<textarea placeholder="请输入评价内容"></textarea>' +
+            '</div>' +
+        '</div>',
+        btn: ['确定','取消'],
+        yes: function (index) {
+            console.log('点击确定时的回调函数');
+            layer.close(index);
+        },
+        no: function (index) {
+            console.log('点击取消时的回调函数');
+            layer.close(index);
+        }
+    });
+});
+
+
 // $(".main_report_footer .footer_save").on('click',function(){
 //     layer.open({
 //         type: 0,
