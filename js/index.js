@@ -43,3 +43,16 @@ function stop_animation() {
     //图片滚动加载初始化
     $('.Load_Animation').css('display', 'none');
 }
+
+$(".main_report_footer .footer_save").on('click',function(){
+    layer.open({
+        type: 0,
+        content: "举报成功！<br/>您已行使了门前三包监督权力",
+    })
+});
+// $(".main_report_footer .footer_save").on('click',function(){
+//     layer.open({
+//         type: 0,
+//         content: "该问题刚被举报过<br/>商家正在积极处理中~",
+//     })
+// });
