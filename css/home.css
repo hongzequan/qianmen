@@ -138,6 +138,7 @@
     -ms-transform: translateX(0);
     transform: translateX(0);
 }
+
 .am-tabs-bd .am-tab-panel {
     position: absolute;
     top: 0;
@@ -360,7 +361,7 @@
 .main_check_store .check_store_content .check_store_search{display: flex;height: 48px;align-items: center;background-color: #FFFFFF;margin: 12px 0 !important;}
 .main_check_store .check_store_content .check_store_search input{border: none !important;width: 100%;margin: 0 8px !important;}
 .main_check_store .check_store_content .check_store_search .check_store_search_img{position: absolute;right: 8px;top: 16px;}
-.main_check_store .check_store_content .check_store_list{line-height: 36px;text-align: left;margin-bottom: 48px;}
+.main_check_store .check_store_content .check_store_list{line-height: 36px;text-align: left;margin-bottom: 12px;}
 .main_check_store .check_store_content .check_store_list>a{background-color: #FFFFFF;margin-top: 12px;padding-left: 8px;display: block;}
 .main_check_store .check_store_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 42px;margin-top: 12px;}
 .main_check_store .check_store_footer .footer_back{flex: 1;background-color: rgba(34, 172, 55, 1);line-height: 42px;color: #FFFFFF}
@@ -372,6 +373,12 @@
 .main_check_store .record .am-tabs .type-name .star-gray-icon{display: inline-block; width: 24px; height: 24px; background-image: url("../images/await-icon.png"); background-size: 204px 28px;background-position-x: -106px;background-position-y: 1px;}
 .main_check_store .record .am-tabs .am-nav-tabs{position: fixed;bottom: 0;width: 100%;z-index: 999;}
 .main_check_store .record .am-tabs .am-nav-tabs a{height: auto;line-height: 0;padding: 0 1em 1em 1em;}
+
+.main_check_store .record .am-tabs .am-tabs-nav .active_i {display: none;margin: 0 auto;}
+.main_check_store .record .am-tabs .am-tabs-nav .active {display: block;margin: 0 auto;}
+.main_check_store .record .am-tabs .am-tabs-nav .am-active .active_i {display: block;margin: 0 auto;}
+.main_check_store .record .am-tabs .am-tabs-nav .am-active .active {display: none;margin: 0 auto;}
+.main_check_store .record .am-tabs .am-tabs-nav a{height: 48px;line-height: normal;}
 
 /* 群众端－门前三包宣传 */
 .main_conduct .conduct_content{background-color: #FFFFFF;margin-top: 12px;}
