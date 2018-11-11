@@ -334,27 +334,31 @@
 .main_base .base_content>div .base_password{display: flex}
 .main_base .base_content>div .base_password .base_password_left{flex: 3}
 .main_base .base_content>div .base_password .base_password_right{flex: 1;text-decoration: underline;color: #22AC37;cursor: pointer;font-size: 14px;}
-.main_base .base-footer{display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
-.main_base .base-footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 48px;}
-.main_base .base-footer .footer_save{flex: 2;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
+.main_base .base-footer{display: flex;align-items: center;text-align: center;height: 42px;margin-top: 12px;}
+.main_base .base-footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 42px;}
+.main_base .base-footer .footer_save{flex: 2;background-color: rgba(34, 172, 55, 1);line-height: 42px;color: #FFFFFF}
 
 /* 商户中心－修改密码 */
 .main_update_password .login_content{margin-top: 12px;}
 .main_update_password .login_content .login_content_li{margin-top: 12px;margin-bottom: 56px;}
-.main_update_password .update_password_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
-.main_update_password .update_password_footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 48px;}
-.main_update_password .update_password_footer .footer_save{flex: 2;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
+.main_update_password .update_password_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 42px;margin-top: 12px;}
+.main_update_password .update_password_footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 42px;}
+.main_update_password .update_password_footer .footer_save{flex: 2;background-color: rgba(34, 172, 55, 1);line-height: 42px;color: #FFFFFF}
 
 /* 商户中心－选择商家 */
 .main_check_store .check_store_content .check_store_search{display: flex;height: 48px;align-items: center;background-color: #FFFFFF;margin: 12px 0 !important;}
 .main_check_store .check_store_content .check_store_search input{border: none !important;width: 100%;margin: 0 8px !important;}
 .main_check_store .check_store_content .check_store_search .check_store_search_img{position: absolute;right: 8px;top: 16px;}
-.main_check_store .check_store_content .check_store_list{line-height: 36px;text-align: left;margin-bottom: 56px;}
+.main_check_store .check_store_content .check_store_list{line-height: 36px;text-align: left;margin-bottom: 48px;}
 .main_check_store .check_store_content .check_store_list>a{background-color: #FFFFFF;margin-top: 12px;padding-left: 8px;display: block;}
-.main_check_store .check_store_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
-.main_check_store .check_store_footer .footer_back{flex: 1;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
+.main_check_store .check_store_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 42px;margin-top: 12px;}
+.main_check_store .check_store_footer .footer_back{flex: 1;background-color: rgba(34, 172, 55, 1);line-height: 42px;color: #FFFFFF}
 
+.main_check_store .record{margin-bottom: 48px;}
 .main_check_store .record .am-tabs .check_store_search{margin: 0 !important;}
+.main_check_store .record .am-tabs .type-name img{position: relative;top: 6px;}
+.main_check_store .record .am-tabs .type-name .star-icon{display: inline-block;width: 24px;height: 24px;background-image: url("../images/await-icon.png");background-size: 204px 28px;background-position-x: -80px;background-position-y: 1px;}
+.main_check_store .record .am-tabs .type-name .star-gray-icon{display: inline-block; width: 24px; height: 24px; background-image: url("../images/await-icon.png"); background-size: 204px 28px;background-position-x: -106px;background-position-y: 1px;}
 .main_check_store .record .am-tabs .am-nav-tabs{position: fixed;bottom: 0;width: 100%;z-index: 999;}
 .main_check_store .record .am-tabs .am-nav-tabs a{height: auto;line-height: 0;padding: 0 1em 1em 1em;}
 
@@ -389,6 +393,7 @@
 .main_report_content_button{background-color: #FFFFFF;height: 42px;margin: 8px 0;display: flex;justify-content: center;align-items: center;}
 
 /* 路巡员端－选择问题 */
+.check_report .record{margin-bottom: 48px;}
 .check_report .record .am-nav-tabs{border-bottom: 1px solid #E9E9E9;}
 .check_report .record .am-nav-tabs>li{width: 25%;}
 .check_report .record .am-nav-tabs>li a{margin: 0;padding: 0;line-height: 40px;}
@@ -404,9 +409,11 @@
 .main_report .main_report_content .report_content_detail .report_text{margin: 8px;}
 .main_report .main_report_content .report_content_detail .report_text textarea{width: 100%;min-height: 80px;}
 .main_report .main_report_content .report_content_name{justify-content: flex-start;padding-left: 32px;}
-.main_report .main_report_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
-.main_report .main_report_footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 48px;}
-.main_report .main_report_footer .footer_save{flex: 3;background-color: rgba(34, 172, 55, 1);line-height: 48px;color: #FFFFFF}
+
+/* 底部 */
+.main_report_footer{z-index: 999;width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 42px;margin-top: 12px;}
+.main_report_footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 42px;}
+.main_report_footer .footer_save{flex: 3;background-color: rgba(34, 172, 55, 1);line-height: 42px;color: #FFFFFF}
 
 
 
