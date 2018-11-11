@@ -376,18 +376,33 @@
 .main_conduct_detail .conduct_detail_content .conduct_detail_content_info .conduct_detail_content_info_date{flex: 4;}
 .main_conduct_detail .conduct_detail_content .conduct_detail_content_text{border: 1px solid #E9E9E9;}
 
+
+/* 图片上传 */
+.report_upload{background-color: #FFFFFF;}
+.report_upload .report_upload_image{display: flex;flex-direction: row;margin: 8px;padding: 8px 0;}
+.report_upload .report_upload_image div{width: 54px;height: 54px;border: 1px solid #B0B0B0;margin-right: 8px;}
+.report_upload .report_upload_image div .img_update{width: 100%;height: 100%}
+.report_upload .report_upload_image div .img_flag{margin: 14px;}
+.report_upload .report_upload_message{font-size: 12px;color: #666666;padding: 8px;}
+
+/* 获取定位*/
+.main_report_content_button{background-color: #FFFFFF;height: 42px;margin: 8px 0;display: flex;justify-content: center;align-items: center;}
+
+/* 路巡员端－选择问题 */
+.check_report .record .am-nav-tabs{border-bottom: 1px solid #E9E9E9;}
+.check_report .record .am-nav-tabs>li{width: 25%;}
+.check_report .record .am-nav-tabs>li a{margin: 0;padding: 0;line-height: 40px;}
+.check_report .record .am-tabs-bd .am-tab-panel ul{margin: 8px;border: 1px solid #E9E9E9;}
+.check_report .record .am-tabs-bd .am-tab-panel .list ul li{min-height: 40px;padding: 0 10px;margin: 0;}
+.check_report .record .am-tabs-bd .am-tab-panel .list ul li p{margin: 10px 0;padding-right: 24px;}
+.check_report .record .am-tabs-bd .am-tab-panel .list ul li:last-child{border-bottom: none;}
+
 /* 群众端－群众举报 */
 .main_report .main_report_content .report_content_detail{background-color: #FFFFFF;margin-top: 8px;}
 .main_report .main_report_content .report_content_detail .report_tab{display: flex;line-height: 40px;padding: 8px 0;color: #999999;}
 .main_report .main_report_content .report_content_detail .report_tab div{flex: 1;margin: 0 8px;border: 1px solid #E9E9E9;text-align: center;}
 .main_report .main_report_content .report_content_detail .report_text{margin: 8px;}
 .main_report .main_report_content .report_content_detail .report_text textarea{width: 100%;min-height: 80px;}
-.main_report .main_report_content .report_content_detail .report_upload .report_upload_image{display: flex;flex-direction: row;margin: 8px;}
-.main_report .main_report_content .report_content_detail .report_upload .report_upload_image div{width: 54px;height: 54px;border: 1px solid #B0B0B0;margin-right: 8px;}
-.main_report .main_report_content .report_content_detail .report_upload .report_upload_image div .img_update{width: 100%;height: 100%}
-.main_report .main_report_content .report_content_detail .report_upload .report_upload_image div .img_flag{margin: 14px;}
-.main_report .main_report_content .report_content_detail .report_upload .report_upload_message{font-size: 12px;color: #666666;padding: 8px;}
-.main_report .main_report_content .main_report_content_button{background-color: #FFFFFF;height: 48px;margin: 8px 0;display: flex;justify-content: center;align-items: center;}
 .main_report .main_report_content .report_content_name{justify-content: flex-start;padding-left: 32px;}
 .main_report .main_report_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 48px;margin-top: 12px;}
 .main_report .main_report_footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 48px;}
