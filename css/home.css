@@ -302,6 +302,17 @@
 .color-green{color: #17B298;}
 .color-yellow{color: #F8B82C;}
 
+.font_12{font-size: 12px;}
+.font_14{font-size: 14px;}
+.font_16{font-size: 16px;}
+.font_18{font-size: 18px;}
+.font_20{font-size: 20px;}
+.bg_color_green{background-color: #17B298;}
+.bg_color_red{background-color: #FF0000;}
+.text_left{text-align: left;}
+.text_center{text-align: center;}
+.text_right{text-align: right;}
+
 /* 登录页 */
 .ax_default{font-family:'Arial Normal', 'Arial';font-weight:400;font-style:normal;font-size:13px;color:#333333;line-height:normal;}
 .loginMain .login_content{margin-top: 24px;}
@@ -414,6 +425,160 @@
 .main_report_footer{z-index: 999;width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 42px;margin-top: 12px;}
 .main_report_footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 42px;}
 .main_report_footer .footer_save{flex: 3;background-color: rgba(34, 172, 55, 1);line-height: 42px;color: #FFFFFF}
+
+/*问题详情*/
+.detail_page{
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	margin-bottom: 55px;
+}
+
+.detail_header{
+	display: flex;
+	height: 100px;
+	background-color: #17B298;
+}
+
+.detail_header_img{
+	flex: 1;
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+}
+.detail_header_img img{
+	width:100px;
+	height:100px;
+}
+
+.detail_header_text{
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	height: 100px;
+	color: #fff;
+	font-weight: bold;
+}
+.detail_header_text_h1{
+	display: flex;
+	align-items: flex-end;
+	flex: 1;
+	height: 50px;
+	font-size: 20px;
+}
+.detail_header_text_h2{
+	display: flex;
+	align-items: center;
+	flex: 1;
+	height: 50px;
+	font-size: 14px;
+}
+
+.detail_content{
+	background-color: #EEE;
+	border-bottom: 1px solid #17B298;;
+	display: flex;
+}
+.detail_content>.content_left{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.detail_content>.content_left>.line_div{
+	height: 100%;
+	width: 2px;
+	background-color: #17B298;
+}
+.detail_content>.content_right{
+	flex:7;
+}
+.detail_content>.content_right>.detail_card{
+	width: 95%;
+	border-radius: 10px;
+	border: 1px solid #fff;
+}
+.detail_content>.content_right>.detail_card>div>.step_dot_green{
+	position: absolute;
+	left: 1.5%;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/await-icon.png');
+	background-size: 213px 30px;
+	background-position: 190px 30px;
+}
+.detail_content>.content_right>.detail_card>div>.step_dot_red{
+	position: absolute;
+	left: 1.5%;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/await-icon.png');
+	background-size: 213px 30px;
+	background-position: 161px 30px;
+}
+.detail_content>.content_right>.detail_card>.detail_card_img{
+	height:60px;
+}
+.detail_content>.content_right>.detail_card>.detail_card_img>.base_right>img{
+	width:50px;
+	height:50px;
+}
+
+.detail_map{
+	display: flex;
+	flex: 1;
+	height: 200px;
+}
+.detail_map>img{
+	width: 100%;
+}
+.detail_footer{
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 55px;
+	bottom:0;
+	background-color: #999;
+}
+
+.detail_footer>.button_all{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: #999;
+}
+.detail_footer>.button_left{
+	display: flex;
+	flex: 1;
+	background-color: #F8B82C;
+	flex-direction: column;
+}
+.detail_footer>.button_left>.button_img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 3;
+}
+.detail_footer>.button_left>.button_text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 2;
+}
+.detail_footer>.button_right{
+	flex: 4;
+	background-color: #17B298;
+}
+.detail_footer>.button_right>.button_text{
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	align-items: center;
+	color: #fff;
+}
 
 
 
