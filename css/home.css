@@ -322,7 +322,7 @@
 .login_content_li div{flex: 3;padding: 0 8px;}
 .login_content_li div input{border: none !important;width: 100%;margin: 0 !important;}
 .loginMain .login_button{display: flex;align-items: center;width: 80%;height: 40px;margin: 24px auto;background-color: rgba(34, 172, 55, 1);border: none;border-radius: 5px;-moz-box-shadow: none;-webkit-box-shadow: none;box-shadow: none;}
-.loginMain .login_button button{width: 100%;color: #FFFFFF}
+.loginMain .login_button div{width: 100%;color: #FFFFFF;text-align: center;}
 
 /* 商户中心 */
 .shopCenter .head{min-height: 184px;position: relative}
