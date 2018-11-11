@@ -302,6 +302,7 @@
 .color-999{color: #999999;}
 .color-green{color: #17B298;}
 .color-yellow{color: #F8B82C;}
+.color-white{color: #fff;}
 
 .font_12{font-size: 12px;}
 .font_14{font-size: 14px;}
@@ -313,6 +314,8 @@
 .text_left{text-align: left;}
 .text_center{text-align: center;}
 .text_right{text-align: right;}
+.bg_color_red{background-color: #FF0000;}
+.bg_color_black{background-color: #000;}
 
 /* 登录页 */
 .ax_default{font-family:'Arial Normal', 'Arial';font-weight:400;font-style:normal;font-size:13px;color:#333333;line-height:normal;}
@@ -505,6 +508,7 @@
 }
 .detail_content>.content_right{
 	flex:7;
+	margin-bottom: 15px;
 }
 .detail_content>.content_right>.detail_card{
 	width: 95%;
@@ -560,7 +564,8 @@
 	justify-content: center;
 	align-items: center;
 	color: #fff;
-	background-color: #999;
+	background-color: rgba(204, 204, 204, 1);
+	font-size: 14px;
 }
 .detail_footer>.button_left{
 	display: flex;
@@ -590,6 +595,61 @@
 	height: 100%;
 	align-items: center;
 	color: #fff;
+}
+.detail_content>.content_right>.detail_card>.base_content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 0;
+}
+.detail_content>.content_right>.detail_card>.base_content>.content_time{
+	display: flex;
+	flex: 3;
+	border: 0;
+	min-height: 45px;
+
+}
+.detail_content>.content_right>.detail_card>.base_content>.content_appr{
+	display: flex;
+	flex: 3;
+	border: 0;
+	min-height: 45px;
+}
+.detail_content>.content_right>.detail_card>.base_content>.content_appr>.appr-laugh-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/laugh-icon.png");}
+.detail_content>.content_right>.detail_card>.base_content>.content_appr>.appr-cry-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/cry-icon.png");}
+.detail_content>.content_right>.detail_card>.base_content>.content_top{
+	display: flex;
+	flex: 1;
+	border: 0;
+	min-height: 0;
+
+}
+.detail_content>.content_right>.detail_card>.base_content>.content_middle{
+	display: flex;
+	flex: 1;
+	border: 0;
+	min-height: 0;
+
+}
+.detail_content>.content_right>.detail_card>.base_content>.content_bottom{
+	display: flex;
+	flex: 1;
+	border: 0;
+	min-height: 0;
+}
+.detail_content>.content_right>.detail_card>.base_content>.text_content{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.detail_map{
+	display: flex;
+	flex: 1;
+	height: 200px;
+}
+.detail_content>.content_right>.detail_card>div:first-child{
+	color:white;
 }
 
 

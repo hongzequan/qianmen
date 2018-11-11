@@ -13,6 +13,8 @@ function initElement() {
 
 $(function() {
     initElement();
+    initMap();
+    countTime();
 })
 window.onload = function() {
     stop_animation();
@@ -113,4 +115,29 @@ function getAddress(){
             document.getElementById('address').innerHTML = "获取定位失败"
         }
     })
+}
+
+//获取当前时间
+var date = new Date();
+var now = date.getTime();
+function countTime() {
+    //设置截止时间
+    var end = now+30*24*3600;
+
+    //时间差
+    var leftTime = end-(new Date().getTime());
+    //定义变量 d,h,m,s保存倒计时的时间
+    var d,h,m,s;
+    if (leftTime>=0) {
+        d = Math.floor(leftTime/1000/60/60/24);
+        h = Math.floor(leftTime/1000/60/60%24);
+        m = Math.floor(leftTime/1000/60%60);
+        s = Math.floor(leftTime/1000%60);
+    }
+    //将倒计时赋值到div中
+    document.getElementById("_h").innerHTML = h>9?h:'0'+h;
+    document.getElementById("_m").innerHTML = m>9?m:'0'+m;
+    document.getElementById("_s").innerHTML = s>9?s:'0'+s;
+    //递归每秒调用countTime方法，显示动态时间效果
+    setTimeout(countTime,1000);
 }

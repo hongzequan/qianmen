@@ -110,11 +110,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="detail_card base_content ax_default">
+                        <div class="doing_question bg_color_red">
+                            <div class="step_dot_red"></div>
+                            <div class="base_left">问题处理</div>
+                            <div class="base_right"></div>
+                        </div>
+                        <div class="base_content">
+                            <!--时间-->
+                            <div class="content_time">
+                                <div >
+                                    <span id="_h" class="font_16 bg_color_red">00</span>：
+                                    <span id="_m" class="font_16 bg_color_red">00</span>：
+                                    <span id="_s" class="font_16 bg_color_black color-white">00</span>
+                                </div>
+                            </div>
+                            <!--评价-->
+                            <div class="content_appr">
+                                <span class="appr-laugh-icon"></span>
+                                <span class="appr-laugh-icon"></span>
+                                <span class="appr-laugh-icon"></span>
+                                <span class="appr-laugh-icon"></span>
+                                <span class="appr-cry-icon"></span>
+                            </div>
+                            <!--提示-->
+                            <div class="content_top">
+                                职能人员正在处理中
+                            </div>
+                            <div class="content_middle">
+                                店主未在规定时间内对该问题进行处理
+                            </div>
+                            <div class="content_bottom color-red">
+                                已扣2分
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--地图-->
             <div class="detail_map">
-                <img src="images/detail_map.png">
+               <div id="allmap" style="width: 100%;height: 200px"></div>
             </div>
             <!--店铺信息-->
             <div class="base_content ax_default">
@@ -160,8 +195,10 @@
     </div>
 
     <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rlw061ZC6RGfqoOiXrAyriv9ndmQv5Ml"></script>
     <script src="js/jquery.lazyload.min.js"></script>
     <script src="js/index.js"></script>
+
 </body>
 
 </html>
