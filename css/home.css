@@ -430,6 +430,8 @@
 .main_report .main_report_content .report_content_detail .report_tab a.tab_active{flex: 1;margin: 0 8px;border: 1px solid #22AC37;text-align: center;}
 .main_report .main_report_content .report_content_detail .people_content .people_panel.tab_active{display: flex;}
 .main_report .main_report_content .report_content_detail .people_content .people_panel{display: none}
+.fileinput-button {position: relative;display: inline-block;overflow: hidden;}
+.fileinput-button input{position: absolute;left: 0px;top: 0px;opacity: 0;-ms-filter: 'alpha(opacity=0)';}
 
 /* 底部 */
 .main_report_footer{z-index: 999;width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 42px;margin-top: 12px;}
