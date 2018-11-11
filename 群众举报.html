@@ -29,14 +29,22 @@
 <body>
     <div class="main main_report">
         <div class="main_report_content ax_default">
-            <div class="report_content_detail">
+            <div class="report_content_detail people_tab" id="people_tab">
                 <div class="report_tab">
-                    <div>卫生</div>
-                    <div>秩序</div>
-                    <div>设施</div>
+                    <a class="tab_active" data-href="#people_tab1">卫生</a>
+                    <a data-href="#people_tab2">秩序</a>
+                    <a data-href="#people_tab3">设施</a>
                 </div>
-                <div class="report_text">
-                    <textarea placeholder="该店门前存在卫生问题"></textarea>
+                <div class="people_content">
+                    <div class="people_panel tab_active" id="people_tab1">
+                        <textarea placeholder="该店门前存在卫生问题" style="width: 100%;height: 50px;resize: none"></textarea>
+                    </div>
+                    <div class="people_panel" id="people_tab2">
+                        <textarea placeholder="该店门前存在秩序方面问题" style="width: 100%;height: 50px;resize: none"></textarea>
+                    </div>
+                    <div class="people_panel" id="people_tab3">
+                        <textarea placeholder="该店门前存在设施问题" style="width: 100%;height: 50px;resize: none"></textarea>
+                    </div>
                 </div>
                 <div class="report_upload">
                     <div class="report_upload_image" style="">
@@ -52,8 +60,8 @@
                     </div>
                 </div>
             </div>
-            <div class="main_report_content_button">
-                获取定位
+            <div class="main_report_content_button" onclick="getAddress()">
+                <span id="address">获取定位</span>
             </div>
         </div>
         <div class="main_report_footer">
@@ -64,6 +72,7 @@
     <script src="layer_mobile/layer.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rlw061ZC6RGfqoOiXrAyriv9ndmQv5Ml"></script>
     <script src="js/index.js"></script>
 </body>
 

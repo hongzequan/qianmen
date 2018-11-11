@@ -56,3 +56,61 @@ $(".main_report_footer .footer_save").on('click',function(){
 //         content: "该问题刚被举报过<br/>商家正在积极处理中~",
 //     })
 // });
+
+//群众举报－tab
+$('#people_tab .report_tab').find('a').click(function(){
+    $(this).closest('.report_tab').find('a').removeClass('tab_active');
+    $(this).addClass('tab_active');
+    $(this).closest('.people_tab').find('.people_panel').removeClass('tab_active');
+    $(""+$(this).attr('data-href')).addClass('tab_active');
+});
+
+/* 百度地图调用方法 */
+function initMap(){
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+
+    function myFun(result){
+        var cityName = result.name;
+        map.setCenter(cityName);
+    }
+    var myCity = new BMap.LocalCity();
+    myCity.get(myFun);
+
+    var geolocation = new BMap.Geolocation();  //实例化浏览器定位对象。
+    geolocation.getCurrentPosition(function(r){   //定位结果对象会传递给r变量
+
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){  //通过Geolocation类的getStatus()可以判断是否成功定位。
+
+            var mk = new BMap.Marker(r.point);    //基于定位的这个点的点位创建marker
+
+            map.addOverlay(mk);    //将marker作为覆盖物添加到map地图上
+
+            map.panTo(r.point);   //将地图中心点移动到定位的这个点位置。注意是r.point而不是r对象。
+
+        } else {
+            alert('failed'+this.getStatus());
+        }
+
+    },{enableHighAccuracy: true})
+    // map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+}
+
+// 获取当前地址信息
+function getAddress(){
+    var geolocation = new BMap.Geolocation();  //实例化浏览器定位对象。
+    geolocation.getCurrentPosition(function(r) {   //定位结果对象会传递给r变量
+        if (this.getStatus() == BMAP_STATUS_SUCCESS) {  //通过Geolocation类的getStatus()可以判断是否成功定位。
+            var geoc = new BMap.Geocoder();
+            var pt = r.point;
+            geoc.getLocation(pt, function (rs) {
+                var addComp = rs.addressComponents;
+                document.getElementById('address').innerHTML = addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber;
+            });
+        } else {
+            document.getElementById('address').innerHTML = "获取定位失败"
+        }
+    })
+}
