@@ -346,7 +346,7 @@
 .main_base .base_content>div .base_left{flex: 1;margin-right: 8px;text-align: right;}
 .main_base .base_content>div .base_right{flex: 3;margin-right: 8px;}
 .main_base .base_content>div .base_right .base_image{position: absolute;top: auto;}
-.main_base .base_content>div .base_right span{margin-left: 24px;}
+.main_base .base_content>div .base_right .base_message{margin-left: 24px;}
 .main_base .base_content>div .base_right .star-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/await-icon.png");background-size: 216px 32px;background-position-x: -80px;}
 .main_base .base_content>div .base_right .star-gray-icon{display: inline-block; width: 30px; height: 30px; background-image: url("../images/await-icon.png"); background-size: 216px 32px;background-position-x: -104px;}
 .main_base .base_content>div .base_password{display: flex}
@@ -358,7 +358,7 @@
 
 /* 商户中心－修改密码 */
 .main_update_password .login_content{margin-top: 12px;}
-.main_update_password .login_content .login_content_li{margin-top: 12px;margin-bottom: 56px;}
+.main_update_password .login_content .login_content_li{margin-top: 12px;}
 .main_update_password .update_password_footer{width: 100%;position: fixed;bottom: 0;display: flex;align-items: center;text-align: center;height: 42px;margin-top: 12px;}
 .main_update_password .update_password_footer .footer_back{flex: 1;background-color: rgba(204, 204, 204, 1);line-height: 42px;}
 .main_update_password .update_password_footer .footer_save{flex: 2;background-color: rgba(34, 172, 55, 1);line-height: 42px;color: #FFFFFF}
