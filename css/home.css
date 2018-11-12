@@ -423,9 +423,11 @@
 .check_report .record .am-nav-tabs>li{width: 25%;}
 .check_report .record .am-nav-tabs>li a{margin: 0;padding: 0;line-height: 40px;}
 .check_report .record .am-tabs-bd .am-tab-panel ul{margin: 8px;border: 1px solid #E9E9E9;}
-.check_report .record .am-tabs-bd .am-tab-panel .list ul li{min-height: 40px;padding: 0 10px;margin: 0;}
+.check_report .record .am-tabs-bd .am-tab-panel .list ul li{min-height: 40px;padding: 0 10px;margin: 0;display: flex;}
 .check_report .record .am-tabs-bd .am-tab-panel .list ul li p{margin: 10px 0;padding-right: 24px;}
 .check_report .record .am-tabs-bd .am-tab-panel .list ul li:last-child{border-bottom: none;}
+.check_report .record .am-tabs-bd .am-tab-panel .list ul li:last-child{border-bottom: none;}
+.check_report .record .am-tabs-bd .am-tab-panel .list .problem_checked img{position: absolute;right: 14px;margin-top: 8px;}
 
 /* 群众端－群众举报 */
 .main_report .main_report_content .report_content_detail{background-color: #FFFFFF;margin-top: 8px;}

@@ -25,12 +25,14 @@ $('#my_tab2 .am-tabs-nav').find('a').click(function() {
     $(this).closest('li').addClass('am-active');
     $(this).closest('.am-tabs').find('.am-tab-panel').removeClass('am-active');
     $("" + $(this).attr('data-href')).addClass('am-active');
+    $(".problem_checked").find('li').find("img").remove();
 });
 $('#my_tab1 .am-tabs-nav').find('a').click(function() {
     $(this).closest('ul').find('li').removeClass('am-active');
     $(this).closest('li').addClass('am-active');
     $(this).closest('.am-tabs').find('.am-tab-panel').removeClass('am-active');
     $("" + $(this).attr('data-href')).addClass('am-active');
+    $(".problem_checked").find('li').find("img").remove();
 });
 //图片滚动加载初始化
 $("#my_tab1 img").lazyload({
@@ -45,6 +47,11 @@ function stop_animation() {
     //图片滚动加载初始化
     $('.Load_Animation').css('display', 'none');
 }
+
+$(".problem_checked li").on('click', function () {
+    $(".problem_checked").find('li').find("img").remove();
+    $(this).append('<img src="images/checked.png" alt="">');
+});
 
 $(".main_report_footer .footer_save").on('click', function() {
     layer.open({
