@@ -88,13 +88,14 @@
                     <div>
                         <img class="img_update" src="images/store01.jpg" alt="">
                     </div>
-                    <div>
+                    <label class="fileinput-button" for="file_upload">
                         <img class="img_flag" src="images/photo.png" alt="">
-                    </div>
+                        <input type="file" id="file_upload"/>
+                    </label>
                 </div>
             </div>
-            <div class="main_report_content_button">
-                获取定位
+            <div class="main_report_content_button" onclick="getAddress()">
+                <span id="address">获取定位</span>
             </div>
         </div>
         <div class="main_report_footer">
@@ -103,6 +104,7 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rlw061ZC6RGfqoOiXrAyriv9ndmQv5Ml"></script>
     <script src="js/index.js"></script>
 </body>
 
