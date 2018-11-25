@@ -106,20 +106,20 @@
 .main_masses .circle .circle_button .am-thumbnails li a.shortcut3{background: url(../images/shortcut3.png) no-repeat; background-size: 60px 60px;}
 .main_masses .circle .logout{display: block; width: 100%; height: 30px; line-height: 30px; text-align: left; padding-left: 35px; margin-bottom: 30px; border-width: 0; background-color: #fff; background-image: url("../images/logout-icon.png"); background-repeat: no-repeat; outline: none;}
 
-.am-nav-tabs>li {width: 50%;text-align: center;}
-.am-nav-tabs>li>a {margin: 0 20%;border-width: 0 0 2px 0;border-color: transparent;}
-.am-nav-tabs>li.am-active>a, .am-nav-tabs>li.am-active>a:focus, .am-nav-tabs>li.am-active>a:hover {margin: 0 20%;border-width: 0 0 2px 0;border-color: #4ddacb;}
-.am-nav {margin-bottom: 0px;padding: 0;list-style: none;background-color: #fff;}
-.am-nav:after, .am-nav:before {content: " ";display: table;}
-.am-nav:after {clear: both;}
-.am-nav-tabs>li {float: left;}
-.am-nav>li {position: relative;display: block;}
-.am-nav-tabs>li>a {line-height: 1.6;border: 1px solid transparent;border-radius: 0;}
-.am-nav>li>a {position: relative;display: block;padding: .4em 1em;border-radius: 0;height: 40px;line-height: 28px;}
-.am-nav-tabs>li.am-active>a, .am-nav-tabs>li.am-active>a:focus, .am-nav-tabs>li.am-active>a:hover {color: #4ddacb;background-color: #fff;cursor: default;}
-.am-tabs-bd {position: relative;border-top: none;overflow: hidden;z-index: 100;-webkit-transition: height .3s;transition: height .3s;}
-.am-tabs-bd .am-tab-panel.am-active {position: relative;z-index: 100;visibility: visible;-webkit-transform: translateX(0);-ms-transform: translateX(0);transform: translateX(0);}
-.am-tabs-bd .am-tab-panel {position: absolute;top: 0;z-index: 99;float: left;width: 100%;visibility: hidden;-webkit-transition: -webkit-transform .3s;transition: -webkit-transform .3s;transition: transform .3s;transition: transform .3s,-webkit-transform .3s;-webkit-transform: translateX(-100%);-ms-transform: translateX(-100%);transform: translateX(-100%);}
+.main_nav-tabs>li {width: 50%;text-align: center;}
+.main_nav-tabs>li>a {margin: 0 20%;border-width: 0 0 2px 0;border-color: transparent;}
+.main_nav-tabs>li.main_active>a, .main_nav-tabs>li.main_active>a:focus, .main_nav-tabs>li.main_active>a:hover {margin: 0 20%;border-width: 0 0 2px 0;border-color: #4ddacb;}
+.main_nav {margin-bottom: 0px;padding: 0;list-style: none;background-color: #fff;}
+.main_nav:after, .main_nav:before {content: " ";display: table;}
+.main_nav:after {clear: both;}
+.main_nav-tabs>li {float: left;}
+.main_nav>li {position: relative;display: block;}
+.main_nav-tabs>li>a {line-height: 1.6;border: 1px solid transparent;border-radius: 0;}
+.main_nav>li>a {position: relative;display: block;padding: .4em 1em;border-radius: 0;height: 40px;line-height: 28px;}
+.main_nav-tabs>li.main_active>a, .main_nav-tabs>li.main_active>a:focus, .main_nav-tabs>li.main_active>a:hover {color: #4ddacb;background-color: #fff;cursor: default;}
+.main_tab-bd {position: relative;border-top: none;overflow: hidden;z-index: 100;-webkit-transition: height .3s;transition: height .3s;}
+.main_tab-bd .main_panel.main_active {position: relative;z-index: 100;visibility: visible;-webkit-transform: translateX(0);-ms-transform: translateX(0);transform: translateX(0);}
+.main_tab-bd .main_panel {position: absolute;top: 0;z-index: 99;float: left;width: 100%;visibility: hidden;-webkit-transition: -webkit-transform .3s;transition: -webkit-transform .3s;transition: transform .3s;transition: transform .3s,-webkit-transform .3s;-webkit-transform: translateX(-100%);-ms-transform: translateX(-100%);transform: translateX(-100%);}
 .tab-footer{text-align: center; font-size: 12px;color: #666666;}
 .tab-footer span{font-size: 10px;color: #666666;}
 .list{width:100%;overflow:hidden;background:#fff;margin-bottom:10px;}
@@ -205,18 +205,18 @@
 .main_check_store .check_store_footer .footer_back{flex: 1;background-color: rgba(34, 172, 55, 1);line-height: 42px;color: #FFFFFF}
 
 .main_check_store .record{margin-bottom: 48px;}
-.main_check_store .record .am-tabs .check_store_search{margin: 0 !important;}
-.main_check_store .record .am-tabs .type-name img{position: relative;top: 6px;}
-.main_check_store .record .am-tabs .type-name .star-icon{display: inline-block;width: 24px;height: 24px;background-image: url("../images/await-icon.png");background-size: 204px 28px;background-position-x: -80px;background-position-y: 1px;}
-.main_check_store .record .am-tabs .type-name .star-gray-icon{display: inline-block; width: 24px; height: 24px; background-image: url("../images/await-icon.png"); background-size: 204px 28px;background-position-x: -106px;background-position-y: 1px;}
-.main_check_store .record .am-tabs .am-nav-tabs{position: fixed;bottom: 0;width: 100%;z-index: 999;}
-.main_check_store .record .am-tabs .am-nav-tabs a{height: auto;line-height: 0;padding: 0 1em 1em 1em;}
+.main_check_store .record .main_tab .check_store_search{margin: 0 !important;}
+.main_check_store .record .main_tab .type-name img{position: relative;top: 6px;}
+.main_check_store .record .main_tab .type-name .star-icon{display: inline-block;width: 24px;height: 24px;background-image: url("../images/await-icon.png");background-size: 204px 28px;background-position-x: -80px;background-position-y: 1px;}
+.main_check_store .record .main_tab .type-name .star-gray-icon{display: inline-block; width: 24px; height: 24px; background-image: url("../images/await-icon.png"); background-size: 204px 28px;background-position-x: -106px;background-position-y: 1px;}
+.main_check_store .record .main_tab .main_nav-tabs{position: fixed;bottom: 0;width: 100%;z-index: 999;}
+.main_check_store .record .main_tab .main_nav-tabs a{height: auto;line-height: 0;padding: 0 1em 1em 1em;}
 
-.main_check_store .record .am-tabs .am-tabs-nav .active_i {display: none;margin: 0 auto;}
-.main_check_store .record .am-tabs .am-tabs-nav .active {display: block;margin: 0 auto;}
-.main_check_store .record .am-tabs .am-tabs-nav .am-active .active_i {display: block;margin: 0 auto;}
-.main_check_store .record .am-tabs .am-tabs-nav .am-active .active {display: none;margin: 0 auto;}
-.main_check_store .record .am-tabs .am-tabs-nav a{height: 48px;line-height: normal;}
+.main_check_store .record .main_tab .main_tabs .active_i {display: none;margin: 0 auto;}
+.main_check_store .record .main_tab .main_tabs .active {display: block;margin: 0 auto;}
+.main_check_store .record .main_tab .main_tabs .main_active .active_i {display: block;margin: 0 auto;}
+.main_check_store .record .main_tab .main_tabs .main_active .active {display: none;margin: 0 auto;}
+.main_check_store .record .main_tab .main_tabs a{height: 48px;line-height: normal;}
 
 /* 群众端－门前三包宣传 */
 .main_conduct .conduct_content{background-color: #FFFFFF;margin-top: 12px;}
@@ -238,15 +238,15 @@
 
 /* 路巡员端－选择问题 */
 .check_report .record{margin-bottom: 48px;}
-.check_report .record .am-nav-tabs{border-bottom: 1px solid #E9E9E9;}
-.check_report .record .am-nav-tabs>li{width: 25%;}
-.check_report .record .am-nav-tabs>li a{margin: 0;padding: 0;line-height: 40px;}
-.check_report .record .am-tabs-bd .am-tab-panel ul{margin: 8px;border: 1px solid #E9E9E9;}
-.check_report .record .am-tabs-bd .am-tab-panel .list ul li{min-height: 40px;padding: 0 10px;margin: 0;display: flex;}
-.check_report .record .am-tabs-bd .am-tab-panel .list ul li p{margin: 10px 0;padding-right: 24px;}
-.check_report .record .am-tabs-bd .am-tab-panel .list ul li:last-child{border-bottom: none;}
-.check_report .record .am-tabs-bd .am-tab-panel .list ul li:last-child{border-bottom: none;}
-.check_report .record .am-tabs-bd .am-tab-panel .list .problem_checked img{position: absolute;right: 14px;margin-top: 8px;}
+.check_report .record .main_nav-tabs{border-bottom: 1px solid #E9E9E9;}
+.check_report .record .main_nav-tabs>li{width: 25%;}
+.check_report .record .main_nav-tabs>li a{margin: 0;padding: 0;line-height: 40px;}
+.check_report .record .main_tab-bd .main_panel ul{margin: 8px;border: 1px solid #E9E9E9;}
+.check_report .record .main_tab-bd .main_panel .list ul li{min-height: 40px;padding: 0 10px;margin: 0;display: flex;}
+.check_report .record .main_tab-bd .main_panel .list ul li p{margin: 10px 0;padding-right: 24px;}
+.check_report .record .main_tab-bd .main_panel .list ul li:last-child{border-bottom: none;}
+.check_report .record .main_tab-bd .main_panel .list ul li:last-child{border-bottom: none;}
+.check_report .record .main_tab-bd .main_panel .list .problem_checked img{position: absolute;right: 14px;margin-top: 8px;}
 
 /* 群众端－群众举报 */
 .main_report .main_report_content .report_content_detail{background-color: #FFFFFF;margin-top: 8px;}

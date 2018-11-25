@@ -11,25 +11,21 @@ function initElement() {
     conceal_close = setTimeout('conceal()', 3000);
 }
 
-window.onload = function() {
-    stop_animation();
-};
-
-$('#find_tab .am-tabs-nav').find('a').click(function() {
-    $(this).closest('ul').find('li').removeClass('am-active');
-    $(this).closest('li').addClass('am-active');
-    $(this).closest('.am-tabs').find('.am-tab-panel').removeClass('am-active');
-    $("" + $(this).attr('data-href')).addClass('am-active');
+$('#find_tab .main_tabs').find('a').click(function() {
+    $(this).closest('ul').find('li').removeClass('main_active');
+    $(this).closest('li').addClass('main_active');
+    $(this).closest('.main_tab').find('.main_panel').removeClass('main_active');
+    $("" + $(this).attr('data-href')).addClass('main_active');
     $(".problem_checked").find('li').find("img").remove();
 });
-$('#masses_tab .am-tabs-nav').find('a').click(function() {
-    $(this).closest('ul').find('li').removeClass('am-active');
-    $(this).closest('li').addClass('am-active');
-    $(this).closest('.am-tabs').find('.am-tab-panel').removeClass('am-active');
-    $("" + $(this).attr('data-href')).addClass('am-active');
+$('#masses_tab .main_tabs').find('a').click(function() {
+    $(this).closest('ul').find('li').removeClass('main_active');
+    $(this).closest('li').addClass('main_active');
+    $(this).closest('.main_tab').find('.main_panel').removeClass('main_active');
+    $("" + $(this).attr('data-href')).addClass('main_active');
     $(".problem_checked").find('li').find("img").remove();
 });
-//图片滚动加载初始化
+//初始化加载动画
 $("#masses_tab img").lazyload({
     placeholder: 'images/loading-img.gif',
     effect: "fadeIn",
@@ -37,7 +33,7 @@ $("#masses_tab img").lazyload({
     failurelimit: 1
 });
 
-/* 加载动画停止 */
+/* 初始化加载动画停止 */
 function stop_animation() {
     //图片滚动加载初始化
     $('.Load_Animation').css('display', 'none');
@@ -219,7 +215,7 @@ function countTime() {
 
 //加载更多
 function loadMore() {
-
+    
 }
 
 //退出登录
@@ -232,3 +228,7 @@ $(function() {
     initMap();
     countTime();
 });
+
+window.onload = function() {
+    stop_animation();
+};
