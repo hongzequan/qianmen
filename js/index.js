@@ -3,7 +3,7 @@ var conceal_close;
 
 /* 定时隐藏活动弹窗 */
 function conceal() {
-    $('#publicity').css('display', 'none');
+    $('#float_box').css('display', 'none');
     clearInterval(conceal_close);
 }
 
@@ -11,23 +11,18 @@ function initElement() {
     conceal_close = setTimeout('conceal()', 3000);
 }
 
-$(function() {
-    initElement();
-    initMap();
-    countTime();
-})
 window.onload = function() {
     stop_animation();
-}
+};
 
-$('#my_tab2 .am-tabs-nav').find('a').click(function() {
+$('#find_tab .am-tabs-nav').find('a').click(function() {
     $(this).closest('ul').find('li').removeClass('am-active');
     $(this).closest('li').addClass('am-active');
     $(this).closest('.am-tabs').find('.am-tab-panel').removeClass('am-active');
     $("" + $(this).attr('data-href')).addClass('am-active');
     $(".problem_checked").find('li').find("img").remove();
 });
-$('#my_tab1 .am-tabs-nav').find('a').click(function() {
+$('#masses_tab .am-tabs-nav').find('a').click(function() {
     $(this).closest('ul').find('li').removeClass('am-active');
     $(this).closest('li').addClass('am-active');
     $(this).closest('.am-tabs').find('.am-tab-panel').removeClass('am-active');
@@ -35,7 +30,7 @@ $('#my_tab1 .am-tabs-nav').find('a').click(function() {
     $(".problem_checked").find('li').find("img").remove();
 });
 //图片滚动加载初始化
-$("#my_tab1 img").lazyload({
+$("#masses_tab img").lazyload({
     placeholder: 'images/loading-img.gif',
     effect: "fadeIn",
     threshold: 50,
@@ -221,3 +216,19 @@ function countTime() {
     //递归每秒调用countTime方法，显示动态时间效果
     setTimeout(countTime, 1000);
 }
+
+//加载更多
+function loadMore() {
+
+}
+
+//退出登录
+function signOut() {
+
+}
+
+$(function() {
+    initElement();
+    initMap();
+    countTime();
+});
