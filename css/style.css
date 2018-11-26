@@ -35,18 +35,16 @@
 
 *{margin:0;padding:0;box-sizing: border-box;}
 * html body{overflow: visible;}
-* html iframe, * html frame{overflow: auto;}
-* html frameset{overflow: hidden;}
 body a, body a:link, body a:visited{color:#000;text-decoration: none;}
 body a:hover{color:#000;text-decoration: none;}
 body{color:#000;font:12px/22px '微软雅黑','宋体',Verdana,Arial,sans-serif,"Times New Roman";text-align:left;overflow-x: hidden; outline: none; position: relative; background-color: #eeeeee !important;}
-body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{margin:0;padding:0;}
+body,ul,li,p,img,div{margin:0;padding:0;}
 input,select,button{font-size:12px;vertical-align:middle;outline:medium;}
 textarea,input{ word-wrap:break-word;word-break:break-all;padding:0px;}
 li{list-style-type:none;}
 img{border:0 none;max-width: 100%;vertical-align: baseline;}
-.c{*zoom:1;}
-.c:after{content:'';display:block;clear:both;height:0px;}
+.clear{*zoom:1;}
+.clear:after{content:'';display:block;clear:both;height:0px;}
 #main_body{position: relative; margin-bottom: 0;}
 #main_body .loading{width: 100%; position: relative;}
 #main_body .loading .am-icon-pulse{font-size: 40px; position: absolute; top: 50%; left: 50%; margin-top: -20px; margin-left: -20px;}
@@ -72,13 +70,6 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .report_upload .report_upload_image div .img_update{width: 100%;height: 100%}
 .report_upload .report_upload_image .fileinput-button .img_flag{margin: 14px;}
 .report_upload .report_upload_message{font-size: 12px;color: #666666;padding: 8px;}
-
-/* spinner */
-.Load_Animation{position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: #fff; z-index: 99999;}
-.spinner {position: absolute;width: 150px;text-align: center;top: 50%;left: 50%;margin: -18px 0 0 -75px;}
-.spinner > div {width: 30px;height: 30px;background-color: #980000;border-radius: 100%;display: inline-block;-webkit-animation: bouncedelay 1.4s infinite ease-in-out;animation: bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode: both;animation-fill-mode: both;}
-.spinner .bounce1 {-webkit-animation-delay: -0.32s;animation-delay: -0.32s;}
-.spinner .bounce2 {-webkit-animation-delay: -0.16s;animation-delay: -0.16s;}
 
 /* 获取定位*/
 .main_report_content_button{background-color: #FFFFFF;height: 42px;margin: 8px 0;display: flex;justify-content: center;align-items: center;}
