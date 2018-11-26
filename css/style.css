@@ -26,16 +26,19 @@
 .text_right{text-align: right;}
 .float_l{float: left;}
 .float_r{float: right;}
-.marquee_common{display: block; margin-left: 30px; height: 30px; line-height: 30px;}
+
 .w100{width: 100%;}
-body a, body a:link, body a:visited{color:#000;text-decoration: none;}
-body a:hover{color:#000;text-decoration: none;}
+
+.ma_right_0{margin-right: 0 !important;}
+.ma_bottom_2_5{margin-bottom: 2.5% !important;}
 
 
 *{margin:0;padding:0;box-sizing: border-box;}
 * html body{overflow: visible;}
 * html iframe, * html frame{overflow: auto;}
 * html frameset{overflow: hidden;}
+body a, body a:link, body a:visited{color:#000;text-decoration: none;}
+body a:hover{color:#000;text-decoration: none;}
 body{color:#000;font:12px/22px '微软雅黑','宋体',Verdana,Arial,sans-serif,"Times New Roman";text-align:left;overflow-x: hidden; outline: none; position: relative; background-color: #eeeeee !important;}
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{margin:0;padding:0;}
 input,select,button{font-size:12px;vertical-align:middle;outline:medium;}
@@ -49,6 +52,7 @@ img{border:0 none;max-width: 100%;vertical-align: baseline;}
 #main_body .loading .am-icon-pulse{font-size: 40px; position: absolute; top: 50%; left: 50%; margin-top: -20px; margin-left: -20px;}
 #main_body .plate .plate_content .map{padding: 10px; padding-left: 0;}
 input{display: inline-block !important;height: 28px !important;line-height: 16px !important;padding: 5px !important;border: 1px solid #cecece !important;border-radius: 3px !important;font-size: 14px !important;background: #fff !important;margin: 0 0 3px !important;}
+.marquee_common{display: block; margin-left: 30px; height: 30px; line-height: 30px;}
 
 /* flex布局 */
 .dis_flex{display: flex;}
