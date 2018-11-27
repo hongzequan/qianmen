@@ -109,7 +109,7 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .main_masses .masses_content .module_title .module-icon.shop-icon{background-position-y: -150px;}
 .main_masses .masses_content .module_content ul{display: flex;align-items: center;justify-content: center;}
 .main_masses .masses_content .module_content ul li{flex: 1;text-align: center;}
-.main_masses .masses_content .module_content ul li a{display: flex;align-items: center;justify-content: center;margin: 0 auto;border-radius: 100%;background: #eee;width: 60px;height: 60px;color: #333;line-height: normal;text-align: center;padding: 6px;font-size: 12px;vertical-align: middle;font-weight: bold;}
+.main_masses .masses_content .module_content ul li a{display: flex;align-items: center;justify-content: center;margin: 0 auto;border-radius: 100%;background: url('../images/bg.png') no-repeat;width: 60px;height: 60px;color: #333;line-height: normal;text-align: center;padding: 6px;font-size: 12px;vertical-align: middle;font-weight: bold;background-size:cover;}
 .main_masses .masses_content .module_content ul li a.bg-green{background: #6fba90;color: #fff;}
 .main_masses .masses_content .module_content ul li a.bg-yellow{background: #feda6d;color: #fff;}
 .main_masses .masses_content .module_content ul li a.bg-red{background: #f66f6f;color: #fff;}
@@ -327,5 +327,5 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .detail_content>.content_right>.detail_card>div:first-child{color:white;}
 .detail_content>.content_right>.detail_card .base_content{margin-bottom: 12px;line-height: 22px;}
 
-
+.noData{background: #fff; text-align: center; padding: 30px 15px;}
 
