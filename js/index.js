@@ -229,6 +229,40 @@ $(function() {
     countTime();
 });
 
+//图片预览
+var bigBannerSwiper;
+$('.detail_card_img .img-info img').click(function(e) {
+    bigBannerSwiper = new Swiper('.big-banner-swiper', {
+        spaceBetween: 15,
+        observer: true,
+        observerParents: true,
+        pagination: '.bigGallery .swiper-pagination',
+        paginationType: 'fraction',
+        onSlideChangeEnd: function(swiper){
+            swiper.update(); //swiper更新
+        }
+    })
+    var index = $(this).index();
+    var imgArr=$(this).parent().find('img');
+    for (var i=0;i<imgArr.length;i++) {
+        bigBannerSwiper.appendSlide('<div class="swiper-slide"><img src='+$(imgArr[i]).attr('src')+'></div>')
+    };
+    bigBannerSwiper.slideTo(index, 0, false);
+    $('.bigGallery').show();
+})
+$('.bigGallery').click(function() {
+    $('.bigGallery').hide();
+    bigBannerSwiper.removeAllSlides();
+})
+
+var bannerSwiper;
+bannerSwiper = new Swiper('.banner .swiper-container', {
+    loop:true,
+    autoplay : 5000,
+    autoplayDisableOnInteraction : false,
+    spaceBetween: 10,
+})
+
 window.onload = function() {
     stop_animation();
 };

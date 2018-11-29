@@ -74,6 +74,12 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 /* 获取定位*/
 .main_report_content_button{background-color: #FFFFFF;height: 42px;margin: 8px 0;display: flex;justify-content: center;align-items: center;}
 
+/* 图片预览 */
+.swiper-slide img{width: 100%;pointer-events: inherit;}
+.bigGallery{display: none;position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: 99;background: #000;}
+.bigGallery .swiper-container{top: 50%;-webkit-transform: translate(0,-50%);transform: translate(0,-50%);}
+.bigGallery .swiper-pagination{color: #fff;text-align: right;padding: 0 15px;font-size: .65rem;}
+
 /* 公共配置css end */
 
 .main_masses .header{margin: 3%;padding: 15px 0;background: url(../images/shopbg.png) no-repeat;background-size: 100% 100%;}
@@ -303,6 +309,7 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .detail_content>.content_right>.detail_card>div>.step_dot_red{position: absolute;left: 1.5%;width: 30px;height: 30px;background-image: url('../images/await-icon.png');background-size: 213px 30px;background-position: 161px 30px;}
 .detail_content>.content_right>.detail_card>.detail_card_img{height:60px;}
 .detail_content>.content_right>.detail_card>.detail_card_img>.base_right>img{width:50px;height:50px;}
+
 .detail_map{display: flex;flex: 1;height: 200px;}
 .detail_map>img{width: 100%;}
 .detail_footer{position: fixed;display: flex;width: 100%;height: 45px;bottom:0;background-color: #999;}

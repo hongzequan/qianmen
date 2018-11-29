@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="format-detection" content="telephone=no" />
     <title>问题详情</title>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/style.min.css"/>
 </head>
 
@@ -62,7 +63,7 @@
                         </div>
                         <div class="detail_card_img">
                             <div class="base_left">现场照片</div>
-                            <div class="base_right">
+                            <div class="base_right img-info">
                                 <img src="images/store01.jpg"/>
                                 <img src="images/store01.jpg"/>
                                 <img src="images/store01.jpg"/>
@@ -332,10 +333,19 @@
         </div>
     </div>
 
+    <!-- 点击大图的时候展开的大图 -->
+    <div class="bigGallery">
+        <div class="swiper-container big-banner-swiper">
+            <div class="swiper-wrapper"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/layer_mobile/layer.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rlw061ZC6RGfqoOiXrAyriv9ndmQv5Ml"></script>
     <script src="js/jquery.lazyload.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
 
 </body>
