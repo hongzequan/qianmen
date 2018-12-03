@@ -15,6 +15,8 @@
 .bg_color_yellow{background-color: #F8B82C;}
 .bg_color_red{background-color: #FF0000;}
 .bg_color_black{background-color: #000;}
+.border_color_red{border: 1px solid #FF0000;}
+.border_color-green{border: 1px solid #17B298;}
 
 .font_12{font-size: 12px;}
 .font_14{font-size: 14px;}
@@ -31,6 +33,7 @@
 
 .ma_right_0{margin-right: 0 !important;}
 .ma_bottom_2_5{margin-bottom: 2.5% !important;}
+.mar_right_8{margin-right: 8px;}
 
 
 *{margin:0;padding:0;box-sizing: border-box;}
@@ -158,7 +161,7 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .list ul li:last-child{margin: 0;}
 .state{display: block; height: 40px; line-height: 40px; float: left;}
 .state i.state-icon{display: inline-block; width: 25px; height: 25px; margin: 7.5px; float: left; background-image: url("../images/state-icon.png"); background-size: 25px 150px;}
-.accomplish i.state-icon{background-position-y: -75px;}
+.color-black i.state-icon{background-position-y: -75px;}
 .problem-type{width:60px;overflow:hidden;line-height:35px;text-align:center;float:left;}
 .type-name{line-height:35px;overflow:hidden;margin-left: 60px;padding-left: 10px;}
 .time{float:right;line-height:40px;margin-right:10px;}
@@ -245,7 +248,7 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .main_check_store .record .main_tab .main_tabs .active {display: block;margin: 0 auto;}
 .main_check_store .record .main_tab .main_tabs .main_active .active_i {display: block;margin: 0 auto;}
 .main_check_store .record .main_tab .main_tabs .main_active .active {display: none;margin: 0 auto;}
-.main_check_store .record .main_tab .main_tabs a{height: 48px;line-height: normal;}
+.main_check_store .record .main_tab .main_tabs a{height: 56px;line-height: normal;}
 
 /* 群众端－门前三包宣传 */
 .main_conduct .conduct_content{background-color: #FFFFFF;margin-top: 12px;}
@@ -335,4 +338,51 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .detail_content>.content_right>.detail_card .base_content{margin-bottom: 12px;line-height: 22px;}
 
 .noData{background: #fff; text-align: center; padding: 30px 15px;}
+
+/* 街道中心 */
+.street_search{display: flex;background-color: #0099ff;width: 100%;position: fixed;top: 0;left: 0;z-index: 999;}
+.street_search .street-icon.street_search_options{background-position-y: -25px;}
+.street-icon{width: 25px;height: 25px;margin: 7.5px;background-image: url("../images/street_centre-icon.png");background-size: 100px 250px;background-position-x: -50px;}
+.street_search .street_search_input{height: 40px;width: 80%;margin-left: 5px;padding: 5px 0;}
+.street_search .street_search_input input{width: 100%;height: 30px !important;border-radius: 5px !important;}
+.street_search .screen_list{display: none;width: 100%;height: auto;padding: 10px 10px 0;position: fixed;top: 40px;left: 0;background-color: #fff;z-index: 999;}
+.street_search .screen_list .screen_title{all_shop_content-height: 30px}
+.street_search .screen_list .screen_layer{padding-bottom: 10px;border-top: 1px solid #e4e4e4;}
+.street_search .screen_list .screen_layer .layer_content{padding-top: 5px;margin-left: -.5rem;margin-right: -.5rem;}
+.street_search .screen_list .screen_layer .layer_content li{width: 33.3%;float: left;padding: 0 .5rem .5rem .5rem;}
+.street_search .screen_list .screen_layer .layer_content li .options_button{display: block;all_shop_content-height: 25px;text-align: center;border: 1px solid #e4e4e4;border-radius: 5px;color: #333333;}
+.street_search .screen_list .screen_layer .layer_content li .options_button.active{border-color: #0099ff;color: #0099ff;background-color: #e1f3ff;}
+.street_search:after{content: '';display: block;clear: both;height: 0;}
+
+.all_shop{position: relative;margin-bottom: 0;}
+.all_shop .all_shop_content{padding: 5px; border-top: 1px solid #e4e4e4; background-color: #fff;display: flex;}
+.all_shop .all_shop_content .merchant_img{width: 60px;height: 60px;overflow: hidden;}
+.all_shop .all_shop_content .merchant_grade{width: 80px;text-align: right;}
+.all_shop .all_shop_content .merchant_grade .star_list{display: block; height: 15px; margin: 10px 0;}
+.all_shop .all_shop_content .merchant_grade .star_list .star-icon{background-position-y: -50px; margin: -5px;float: right;}
+.all_shop .all_shop_content .merchant_grade .star_list .star-icon-on{background-position-y: -75px; margin: -5px;}
+.all_shop .all_shop_content .merchant_message{height: 60px; line-height: 30px;width: calc(100% - 140px);margin: 0 8px;}
+.all_shop .all_shop_content .all_shop_message{height: 60px; line-height: 20px;width: calc(100% - 80px);margin: 0 8px;}
+.all_shop .all_shop_content .all_shop_message h3{word-wrap: normal;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.all_shop .all_shop_content .all_shop_message p span{border-radius: 3px;}
+
+.street_center .check_store_content{margin-top: 40px;}
+.street_center .list ul li .street_special{float:right;line-height:35px;}
+
+.street_center .record{margin-bottom: 48px;}
+.street_center .record .main_tab .check_store_search{margin: 0 !important;}
+.street_center .record .main_tab .type-name img{position: relative;top: 6px;}
+.street_center .record .main_tab .main_tabs .active {display: block;margin: 0 auto;width: 25px;height: 25px;background-image: url("../images/street_centre-icon.png");background-size: 104px 240px;}
+.street_center .record .main_tab .main_tabs li:nth-child(1) .active {background-position-x: -27px;background-position-y: 0;}
+.street_center .record .main_tab .main_tabs li:nth-child(2) .active {background-position-x: -27px;background-position-y: -24px;}
+.street_center .record .main_tab .main_tabs li:nth-child(3) .active {background-position-x: -27px;background-position-y: -48px;}
+.street_center .record .main_tab .main_tabs li:nth-child(4) .active {background-position-x: -27px;background-position-y: -72px;}
+.street_center .record .main_tab .main_tabs li.main_active span{color: #0099ff;}
+.street_center .record .main_tab .main_tabs li.main_active:nth-child(1) .active {background-position-x: -1px;background-position-y: 0;}
+.street_center .record .main_tab .main_tabs li.main_active:nth-child(2) .active {background-position-x: -1px;background-position-y: -24px;}
+.street_center .record .main_tab .main_tabs li.main_active:nth-child(3) .active {background-position-x: -1px;background-position-y: -48px;}
+.street_center .record .main_tab .main_tabs li.main_active:nth-child(4) .active {background-position-x: -1px;background-position-y: -72px;}
+.street_center .record .main_tab .main_nav-tabs{position: fixed;bottom: 0;width: 100%;z-index: 997;}
+.street_center .record .main_nav-tabs>li{width: 25%;}
+.street_center .record .main_nav-tabs>li a{margin: 0;height: 56px;line-height: normal;padding: 1em;border-width: 0;}
 

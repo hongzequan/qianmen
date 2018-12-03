@@ -17,6 +17,15 @@ $('#find_tab .main_tabs').find('a').click(function() {
     $(this).closest('.main_tab').find('.main_panel').removeClass('main_active');
     $("" + $(this).attr('data-href')).addClass('main_active');
     $(".problem_checked").find('li').find("img").remove();
+    if($('.street_search').length > 0){
+        if($(this).attr('data-href') === '#tab3'){
+            $('.street_search').hide();
+        }else{
+            $('.street_search').show();
+        }
+
+    }
+
 });
 $('#masses_tab .main_tabs').find('a').click(function() {
     $(this).closest('ul').find('li').removeClass('main_active');
@@ -24,6 +33,31 @@ $('#masses_tab .main_tabs').find('a').click(function() {
     $(this).closest('.main_tab').find('.main_panel').removeClass('main_active');
     $("" + $(this).attr('data-href')).addClass('main_active');
     $(".problem_checked").find('li').find("img").remove();
+});
+//街道中心筛选
+$('.street_search .street_search_options, .shade').click(function () {
+    if($('.main_tabs').length > 0){
+        if($('.main_tabs .main_active a').attr('data-href') === '#tab1'){
+            $('.street_search .screen_list div[name="all_shop_screen"]').show();
+            $('.street_search .screen_list div[name="all_event_screen"]').hide();
+            $('.street_search .screen_list div[name="all_street_screen"]').hide();
+        }else if($('.main_tabs .main_active a').attr('data-href') === '#tab2'){
+            $('.street_search .screen_list div[name="all_shop_screen"]').hide();
+            $('.street_search .screen_list div[name="all_event_screen"]').show();
+            $('.street_search .screen_list div[name="all_street_screen"]').hide();
+        }else if($('.main_tabs .main_active a').attr('data-href') === '#tab4'){
+            $('.street_search .screen_list div[name="all_shop_screen"]').hide();
+            $('.street_search .screen_list div[name="all_event_screen"]').hide();
+            $('.street_search .screen_list div[name="all_street_screen"]').show();
+        }
+    }
+    $('.street_search .screen_list').toggle();
+    $('.shade').toggle();
+});
+//街道中心筛选－切换
+$('.street_search .options_button').click(function () {
+    $(this).closest('.layer_content').find('.options_button').removeClass('active');
+    $(this).addClass('active');
 });
 //初始化加载动画
 $("#masses_tab img").lazyload({
