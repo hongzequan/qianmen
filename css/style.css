@@ -252,9 +252,9 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .main_conduct .conduct_content .conduct_list{display: flex;height: 96px;padding: 0 8px;border-bottom: 1px solid #E9E9E9;}
 .main_conduct .conduct_content .conduct_list .conduct_list_left{width: 85px;}
 .main_conduct .conduct_content .conduct_list .conduct_list_left img{margin-top: 12px;}
-.main_conduct .conduct_content .conduct_list .conduct_list_right{width: calc(100% - 85px);display: flex;flex-direction: column;}
-.main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_title{line-height: 48px;font-size: 16px;}
-.main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_detail{display: flex;line-height: 48px;}
+.main_conduct .conduct_content .conduct_list .conduct_list_right{width: calc(100% - 85px);display: flex;flex-direction: column;padding: 12px 0;}
+.main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_title{font-size: 16px;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_detail{display: flex;flex: 1;align-items: flex-end;}
 .main_conduct .conduct_content .conduct_list .conduct_list_right .conduct_list_right_detail > div{flex: 1;}
 
 /* 群众端－门前三包宣传－详情 */
