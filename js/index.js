@@ -300,3 +300,44 @@ bannerSwiper = new Swiper('.banner .swiper-container', {
 window.onload = function() {
     stop_animation();
 };
+
+// 公用弹窗
+// 打开弹窗
+function openModal(){
+    var mondal = $('.modal');
+    var mask = $('.modal-backdrop')
+    mondal.show().addClass('fade in');
+    mask.show().addClass('fade in');
+    ModalHelper.afterOpen();
+}
+
+function closeModal() {
+    var mondal = $('.modal');
+    var mask = $('.modal-backdrop')
+    mondal.hide().removeClass('fade in');
+    mask.hide().removeClass('fade in');
+    $('body').removeClass('no-scroll');
+    ModalHelper.beforeClose();
+}
+
+/**
+ * ModalHelper helpers resolve the modal scrolling issue on mobile devices
+ * https://github.com/twbs/bootstrap/issues/15852
+ * requires document.scrollingElement polyfill https://github.com/yangg/scrolling-element
+ */
+var ModalHelper = (function(bodyCls) {
+    var scrollTop;
+    return {
+        afterOpen: function() {
+            scrollTop = document.scrollingElement.scrollTop;
+            document.body.classList.add(bodyCls);
+            document.body.style.top = -scrollTop + 'px';
+        },
+        beforeClose: function() {
+            document.body.classList.remove(bodyCls);
+            // scrollTop lost after set position:fixed, restore it back.
+            document.scrollingElement.scrollTop = scrollTop;
+        }
+    };
+})('no-scroll');
+

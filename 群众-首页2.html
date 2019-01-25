@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>群众首页</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body id="indexPage">
+    <div id="float_box">
+        <div class="float_box_img">
+            <a class="close" onclick="conceal();"></a>
+            <img alt="宣传图片" src="images/publicity.png?v=1">
+        </div>
+    </div>
+    <div class="main_masses">
+        <!-- 顶部关注 -->
+        <div class="fixed-top follow">
+            <span><img src="images/logo.png" alt="蓝田经济开发区"> 蓝田经济开发区</span>
+            <span><a class="btn" onclick="openModal()">关注公众号</a></span>
+        </div>
+        <!-- 需要轮播的话。底下class='banner' 我这里做预留功能才写成这样的结构 -->
+        <div class="">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/banner.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="roll">
+            <i class="roll-icon">&ensp;</i>
+            <marquee class="marquee_common">
+                门前三包公共服务平台正式上线啦!
+            </marquee>
+        </div>
+        <!-- 店铺信息 -->
+        <div class="main_base">
+            <h3>商铺信息</h3>
+            <div class="base_content ax_default">
+                <div>
+                    <div class="base_left">商家名称:</div>
+                    <div class="base_right">千里香混沌</div>
+                </div>
+                <div>
+                    <div class="base_left">商家星级:</div>
+                    <div class="base_right">
+                        <span class="star-icon"></span>
+                        <span class="star-icon"></span>
+                        <span class="star-icon"></span>
+                        <span class="star-icon"></span>
+                        <span class="star-gray-icon"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="base_left">商家头像:</div>
+                    <div class="base_right">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="base_left">所属街道:</div>
+                    <div class="base_right">北环城路-101号</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="community">
+            <div class="main_tab" id="masses_tab">
+                <ul class="main_tabs main_nav main_nav-tabs">
+                    <li class="main_active"><a data-href="#tab3">本店风情</a></li>
+                    <li><a data-href="#tab4">社区风貌</a></li>
+                </ul>
+                <div class="main_tab-bd">
+                    <div class="main_panel main_active" id="tab3">
+                        <ul>
+                            <li><img data-original="http://xmch.mq3b.com//upload/store/images/c71e3411-11f7-4759-b6f5-ddf752a34ad8.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main_panel" id="tab4">
+                        <ul>
+                            <li><img data-original="http://xmch.mq3b.com//upload/store/images/e3147e3e-b5bb-422d-89d3-b06171107d1c.jpg">
+                            </li>
+                            <li><img data-original="http://xmch.mq3b.com//upload/store/images/426d31b9-468f-4e38-a27e-8fa189e14f07.jpg">
+                            </li>
+                            <li><img data-original="http://xmch.mq3b.com//upload/store/images/501685fe-e76f-4089-99e6-ff15681e16ba.jpg">
+                            </li>
+                            <li><img data-original="http://xmch.mq3b.com//upload/store/images/7dc83571-4854-4d9f-8bec-de3cfbdc54a8.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-footer"> 如需修改或增加本店图片<br> <span>请直接关注并发送照片至本公众号</span></div>
+            </div>
+        </div>
+
+        <!-- 公用弹窗 -->
+        <div class="modal">
+            <div class="modal-dialog">
+                <div class="g-card g-style">
+                   <img src="https://hongzequan.oss-cn-shenzhen.aliyuncs.com/free/qrCode.png" alt="">
+                   <p>长按并关注</p>
+                   <p>蓝田经济开发区公众号</p>
+                </div>
+            </div>
+            <div class="modal-backdrop" onclick="closeModal()"></div>
+        </div>
+
+
+        <div class="record">
+            <div class="main_tab" id="find_tab">
+                <ul class="main_tabs main_nav main_nav-tabs">
+                    <li class="main_active"><a data-href="#tab1">举报记录</a></li>
+                    <li><a data-href="#tab2">巡查记录</a></li>
+                </ul>
+                <div class="main_tab-bd">
+                    <div class="main_panel main_active" id="tab1">
+                        <!--列表循环开始-->
+                        <div>
+                            <div class="list">
+                                <ul>
+                                    <li class="title">
+                                        <div><span class="state accomplish"><i class="state-icon"></i>处理完成</span></div>
+                                        <span class="special">             2018-10-22 12:40:56            </span>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">问题类型</div>
+                                        <div class="type-name">环境不洁</div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">问题描述</div>
+                                        <div class="type-name">环境不洁</div>
+                                    </li>
+                                    <li class="problem-photoarea">
+                                        <div class="problem-type">现场照片</div>
+                                        <div class="problem-photo"><img src="http://xmch.mq3b.com//upload/event/images/loSis8Uk-oySRVcfWHmUAajQCU2UObRCity2TxIhAiArWxJ5wMXwtbVzW352oOrM.jpg" onerror="javascript:this.src = 'http://xmch.mq3b.com/images/fail.png'">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">处理方式</div>
+                                        <div class="type-name">职能人员处理 <span class="caeaeae FR">23:00:00</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">处理结果</div>
+                                        <div class="type-name color-red"><span class="float_l">                           问题未解决（扣2分）                         </span>
+                                            <span class="caeaeae FR">23:00:00</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="time"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li class="title">
+                                        <div><span class="state accomplish"><i class="state-icon"></i>处理完成</span></div>
+                                        <span class="special">             2018-06-27 20:25:16            </span>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">问题类型</div>
+                                        <div class="type-name">环境不洁</div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">问题描述</div>
+                                        <div class="type-name">环境不洁</div>
+                                    </li>
+                                    <li class="problem-photoarea">
+                                        <div class="problem-type">现场照片</div>
+                                        <div class="problem-photo"><img src="http://xmch.mq3b.com//upload/event/images/Wjab5XQn0gILxj1uHkUNYZnaCaivlW9FtfjVpFM4AwHubr_0z4Q7FSCQcLIjzyIe.jpg" onerror="javascript:this.src = 'http://xmch.mq3b.com/images/fail.png'">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">处理方式</div>
+                                        <div class="type-name">职能人员处理 <span class="caeaeae FR">23:00:00</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">处理结果</div>
+                                        <div class="type-name color-red"><span class="float_l">                           问题未解决（扣2分）                         </span>
+                                            <span class="caeaeae FR">23:00:00</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="time"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li class="title">
+                                        <div><span class="state accomplish"><i class="state-icon"></i>处理完成</span></div>
+                                        <span class="special">             2018-08-01 13:37:10            </span>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">问题类型</div>
+                                        <div class="type-name">违章停车</div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">问题描述</div>
+                                        <div class="type-name">违章停车</div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">现场照片</div>
+                                        <div class="problem-photo"><img src="http://xmch.mq3b.com//upload/event/images/PWgbEBdpsBymxU6ucAyW9kFGGrDbCt5AS5Nk1qUS5coO_85rywzuzKMlCscsLGCv.jpg" onerror="javascript:this.src = 'http://xmch.mq3b.com/images/fail.png'">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">处理方式</div>
+                                        <div class="type-name">职能人员处理 <span class="caeaeae FR">23:00:00</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="problem-type">处理结果</div>
+                                        <div class="type-name color-red"><span class="float_l">                           问题未解决（扣2分）                         </span>
+                                            <span class="caeaeae FR">23:00:00</span></div>
+                                    </li>
+                                    <li>
+                                        <div class="time"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="to_load" onclick="loadMore(1)">点击加载更多</a>
+                        <!--列表循环结束-->
+                    </div>
+                    <div class="main_panel" id="tab2">
+                        <!-- 当没数据的时候的展示 -->
+                        <div class="noData">
+                            <img src="images/noData.png" alt="">
+                            <p>优质示范店铺，暂无巡查记录</p>
+                        </div>
+
+                        <!--列表循环开始-->
+                        <!-- <div>
+                        <div class="list">
+                            <ul>
+                                <li class="title">
+                                    <div><span class="state accomplish"><i class="state-icon"></i></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightCell">
+            <a href="tel:110"><img src="images/tel.png" alt="">副街长
+            </a>
+        </div>
+        <!-- 底部 -->
+        <div class="fixed-footer">
+            <span class="g-col">
+                <a href="">群众举报</a>
+            </span>
+            <span class="g-col">
+                <a href="">街组巡查</a>
+            </span>
+            <span class="g-col">
+                <a href="">领导查看</a>
+            </span>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
