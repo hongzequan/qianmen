@@ -141,15 +141,16 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 
 /*新增修改*/
 .fixed-top{position: fixed; top: 0; left: 0; width: 100%; height: 40px; background: #fff; z-index: 101; box-shadow: 0 0px 4px rgba(0, 0, 0, .25); } 
-.main_masses .follow{display: flex; align-items: center; justify-content: space-between; padding: 5px 15px; } 
+.main_masses .follow{display: flex; align-items: center; justify-content: space-between; padding: 6px 15px;font-size: 14px;} 
 .main_masses .follow span{display: inline-block; vertical-align: middle; height: 100%; } 
 .main_masses .follow span img{vertical-align:middle;max-width: 100%;max-height: 100%;} 
 .main_masses .follow .btn{display: inline-block; background: #70d572; color: #fff; padding: 3px 6px; border-radius: 4px; }
 .main_masses .main_base{}
 .main_masses .main_base .base_content{padding: 0 10px;margin-top: 0;}
-.main_masses .main_base h3{background: #fff; text-align: center; line-height: 40px; font-weight: normal; color: #000; } 
+.main_masses .main_base h3{background: #fff; text-align: center; line-height: 40px; font-weight: normal; color: #000;font-size: 14px; } 
 .main_masses .main_base .base_content>div .base_left{text-align: left;color: #999;}
 .main_masses .main_base .base_content>div .base_right{text-align: right;}
+.main_masses .main_base .base_content>div .base_right img{vertical-align: middle;}
 
 .main_nav-tabs>li {width: 50%;text-align: center;}
 .main_nav-tabs>li>a {margin: 0 20%;border-width: 0 0 2px 0;border-color: transparent;}
@@ -225,7 +226,7 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .main_base .base_content>div .base_right .base_image{position: absolute;top: auto;}
 .main_base .base_content>div .base_right .base_message{margin-left: 24px;}
 .main_base .base_content>div .base_right .star-icon{display: inline-block;width: 30px;height: 30px;background-image: url("../images/await-icon.png");background-size: 216px 32px;background-position-x: -80px;}
-.main_base .base_content>div .base_right .star-gray-icon{display: inline-block; width: 30px; height: 30px; background-image: url("../images/await-icon.png"); background-size: 216px 32px;background-position-x: -104px;}
+.main_base .base_content>div .base_right .star-gray-icon{display: inline-block; width: 30px; height: 30px; background-image: url("../images/await-icon.png"); background-size: 216px 32px;background-position-x: -106px;}
 .main_base .base_content>div .base_password{display: flex}
 .main_base .base_content>div .base_password .base_password_left{flex: 3}
 .main_base .base_content>div .base_password .base_password_right{flex: 1;text-decoration: underline;color: #22AC37;cursor: pointer;font-size: 14px;}
@@ -402,7 +403,7 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 #indexPage{padding:40px 0;}
 .fixed-footer{position: fixed;left: 0;bottom: 0;height: 40px;line-height: 40px;z-index: 101;display: flex;width: 100%;text-align: center;background: #fff;align-items: center;box-shadow: 0 0px 4px rgba(0, 0, 0, 0.25);}
 .g-col{flex: 1;}
-.g-col a{display: block; }
+.g-col a{display: block;font-size: 14px; }
 
 .rightCell{position: fixed;right: 10px;bottom: 15%;z-index: 101;border-radius: 100%;overflow: hidden;}
 .rightCell a{display: block;background: #63bda0;color: #fff !important;width: 60px;height: 60px;text-align: center;padding: 6px;font-size: 12px;}
@@ -414,7 +415,7 @@ input{display: inline-block !important;height: 28px !important;line-height: 16px
 .fade.in{opacity: 1;} 
 .modal.fade .modal-dialog{-webkit-transition: -webkit-transform .3s ease-out;-o-transition: -o-transform .3s ease-out;transition: transform .3s ease-out;-webkit-transform: translate(0,-25%);-ms-transform: translate(0,-25%);-o-transform: translate(0,-25%);transform: translate(0,-25%);} 
 .modal.in .modal-dialog{-webkit-transform: translate(0,0);-ms-transform: translate(0,0);-o-transform: translate(0,0);transform: translate(0,-50%);} 
-.modal-dialog{position: absolute;left: .5rem;right: .5rem;top: 50%;width: auto;z-index: 11;transform: translateY(-50%);} 
+.modal-dialog{position: absolute;left: 1rem;right: 1rem;top: 50%;width: auto;z-index: 11;transform: translateY(-50%);} 
 .modal-backdrop{position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 10;background-color: #000;} 
 .modal-backdrop.fade{filter: alpha(opacity=0); opacity: 0;}
 .modal-backdrop.in{filter: alpha(opacity=50);opacity: .7;} 
